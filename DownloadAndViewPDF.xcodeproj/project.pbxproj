@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		736BAD252793E324001E39BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736BAD242793E324001E39BA /* AppDelegate.swift */; };
 		736BAD272793E324001E39BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736BAD262793E324001E39BA /* SceneDelegate.swift */; };
-		736BAD292793E324001E39BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736BAD282793E324001E39BA /* ViewController.swift */; };
-		736BAD2C2793E324001E39BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 736BAD2A2793E324001E39BA /* Main.storyboard */; };
+		736BAD292793E324001E39BA /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736BAD282793E324001E39BA /* MainVC.swift */; };
 		736BAD2E2793E325001E39BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 736BAD2D2793E325001E39BA /* Assets.xcassets */; };
 		736BAD312793E325001E39BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 736BAD2F2793E325001E39BA /* LaunchScreen.storyboard */; };
+		736BAD392793E3DE001E39BA /* DocumentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736BAD382793E3DE001E39BA /* DocumentVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		736BAD212793E324001E39BA /* DownloadAndViewPDF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DownloadAndViewPDF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		736BAD242793E324001E39BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		736BAD262793E324001E39BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		736BAD282793E324001E39BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		736BAD2B2793E324001E39BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		736BAD282793E324001E39BA /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		736BAD2D2793E325001E39BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		736BAD302793E325001E39BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		736BAD322793E325001E39BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		736BAD382793E3DE001E39BA /* DocumentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +58,8 @@
 			children = (
 				736BAD242793E324001E39BA /* AppDelegate.swift */,
 				736BAD262793E324001E39BA /* SceneDelegate.swift */,
-				736BAD282793E324001E39BA /* ViewController.swift */,
-				736BAD2A2793E324001E39BA /* Main.storyboard */,
+				736BAD282793E324001E39BA /* MainVC.swift */,
+				736BAD382793E3DE001E39BA /* DocumentVC.swift */,
 				736BAD2D2793E325001E39BA /* Assets.xcassets */,
 				736BAD2F2793E325001E39BA /* LaunchScreen.storyboard */,
 				736BAD322793E325001E39BA /* Info.plist */,
@@ -127,7 +127,6 @@
 			files = (
 				736BAD312793E325001E39BA /* LaunchScreen.storyboard in Resources */,
 				736BAD2E2793E325001E39BA /* Assets.xcassets in Resources */,
-				736BAD2C2793E324001E39BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +137,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				736BAD292793E324001E39BA /* ViewController.swift in Sources */,
+				736BAD292793E324001E39BA /* MainVC.swift in Sources */,
 				736BAD252793E324001E39BA /* AppDelegate.swift in Sources */,
 				736BAD272793E324001E39BA /* SceneDelegate.swift in Sources */,
+				736BAD392793E3DE001E39BA /* DocumentVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		736BAD2A2793E324001E39BA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				736BAD2B2793E324001E39BA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		736BAD2F2793E325001E39BA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +286,6 @@
 				INFOPLIST_FILE = DownloadAndViewPDF/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +313,6 @@
 				INFOPLIST_FILE = DownloadAndViewPDF/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
